@@ -1,14 +1,14 @@
 import React from 'react';
 import * as Auth from '../../services/auth';
 import { Input } from './components/Input';
-
+import Link from 'react-router-dom/Link';
 
 class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       password: '',
-      email: '',
+      username: '',
       error: false,
     }
     
@@ -27,22 +27,21 @@ class Form extends React.Component {
   submitHandler(e) {
     e.preventDefault();
 
-    const { email, password } = this.state;
-    Auth.signIn(email, password)
-      .then(console.log);
+    const { username, password } = this.state;
+    Auth.signIn(username, password);
   }
 
   render() {
-    const emailHandler = this.changeHandler("email");
+    const usernameHandler = this.changeHandler("username");
     const passwordHandler = this.changeHandler("password");
 
     return (
       <form>
         <Input 
-          label="Email"
-          type="email"
-          value={this.state.email}
-          changeHandler={emailHandler} 
+          label="Username"
+          type="text"
+          value={this.state.username}
+          changeHandler={usernameHandler} 
         />
         <Input 
           label="Password"
@@ -58,12 +57,25 @@ class Form extends React.Component {
   }
 }
 
-const SignIn = () => (
-  <React.Fragment>
+const SignInForm = () => (
+  <div>
     <h1>Enter your PhraseApp credential.</h1>
     <Form />
-  </React.Fragment>
-);
+  </div>
+)
+
+const SignedIn = () => (
+  <div>
+    <h2>You've already signed in</h2>
+    <Link to='/'>Go to dashboard</Link> | <Link to='/'>Sign out</Link>
+  </div>
+)
+
+const SignIn = () => {
+  return Auth.isAuthorized()
+    ? <SignedIn />
+    : <SignInForm />
+};
 
 export {
   SignIn,

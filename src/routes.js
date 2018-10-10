@@ -9,9 +9,9 @@ import { isAuthorized } from './services/auth';
 const Routes = () => (
   <Switch>
     <Route exact path='/' render={
-      props => isAuthorized() 
+      () => isAuthorized() 
         ? <Dashboard />
-        : (<Redirect to='/signin' />) 
+        : <Redirect to='/signin' />
     } />
     <Route path='/signin' component={SignIn} />
   </Switch>
