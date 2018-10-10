@@ -1,9 +1,13 @@
 import { devLogger } from '../../utils';
+import { fetchWithToken } from '../auth/';
 
-function getJobs (username, password) {
-  return fetch(`${process.env.API_URL}/jobs`)
+function getJobs () {
+  return fetchWithToken(`${process.env.API_URL}/jobs`)
   .then(res => res.json())
   .then(devLogger)
-  .then(data => localStorage.setItem('token', data['hashed_token']))
   .catch(console.error);
 };
+
+export {
+  getJobs,
+}

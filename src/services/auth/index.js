@@ -1,3 +1,5 @@
+import { isObjectEmpty } from '../../utils';
+
 function signIn (username, password) {
   const options = {
     method: 'post',
@@ -15,7 +17,7 @@ function signIn (username, password) {
     console.log(data);
     return data
   })
-  .then(data => localStorage.setItem('token', data['hashed_token']))
+  .then(data => localStorage.setItem('token', data['token']))
   .catch(console.error);
 };
 
@@ -26,7 +28,19 @@ function isAuthorized () {
   return !!localStorage.getItem('token');
 }
 
+function fetchWithToken(url, options={}) {
+  const token = localStorage.getItem('token');
+  if (!token) throw `No token found - Please try signing in again.`;
+  if (
+    !options.hasOwnProperty('headers') || 
+    !options.headers.hasOwnProperty('Authorization')
+  ) options.headers = { 'Authorization': `token ${token}` };
+
+  return fetch(url, options);
+}
+
 export {
   signIn,
   isAuthorized,
+  fetchWithToken,
 }
