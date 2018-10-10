@@ -61,6 +61,10 @@ const SignInForm = () => (
   <div>
     <h1>Enter your PhraseApp credential.</h1>
     <Form />
+    <small>
+      Phrasejobs is an opensource project, made for PhraseApp translators.
+      <br />
+      Our server doesn't store any of your information <em>at all</em>, including your credential.</small>
   </div>
 )
 
