@@ -1,5 +1,3 @@
-import { isObjectEmpty } from '../../utils';
-
 function signIn (username, password) {
   const options = {
     method: 'post',
