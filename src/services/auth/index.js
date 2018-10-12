@@ -26,7 +26,10 @@ function isAuthorized () {
   return !!localStorage.getItem('token');
 }
 
-function fetchWithToken(url, options={}) {
+function fetchWithToken(url='', options={}) {
+  const baseUrl = options.baseUrl || process.env.API_URL;
+  const _url = url.includes('http') ? url : `${baseUrl}/${url}`;
+
   const token = localStorage.getItem('token');
   if (!token) throw `No token found - Please try signing in again.`;
   if (
@@ -34,7 +37,7 @@ function fetchWithToken(url, options={}) {
     !options.headers.hasOwnProperty('Authorization')
   ) options.headers = { 'Authorization': `token ${token}` };
 
-  return fetch(url, options);
+  return fetch(_url, options);
 }
 
 export {
