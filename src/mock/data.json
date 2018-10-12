@@ -1,0 +1,114 @@
+[
+  {
+    "project": {
+      "id": "4249e54d6e9e622eda3e8bfbb97b47e8",
+      "name": "Memrise iOS",
+      "main_format": "strings",
+      "project_image_url": null,
+      "created_at": "2017-02-28T14:35:13Z",
+      "updated_at": "2018-10-12T16:40:18Z",
+      "account": {
+        "id": "7e0b50e0",
+        "name": "Memrise",
+        "company": "",
+        "created_at": "2017-02-28T14:33:26Z",
+        "updated_at": "2018-10-12T17:08:58Z"
+      }
+    },
+    "jobs": [
+      {
+        "id": "78be1224cee0fd1064065a476ed6c247",
+        "name": "Translations for 15 October",
+        "briefing": "8 strings for the Explore Feature 'Halloween' items.",
+        "due_date": "2018-10-16T10:00:00Z",
+        "state": "in_progress",
+        "created_at": "2018-10-12T08:34:21Z",
+        "updated_at": "2018-10-12T10:51:04Z"
+      }
+    ]
+  },
+  {
+    "project": {
+      "id": "7dd09f1b3b521282f0e511fd66022728",
+      "name": "Memrise Emails",
+      "main_format": "",
+      "project_image_url": null,
+      "created_at": "2017-03-16T11:43:52Z",
+      "updated_at": "2018-10-12T16:36:28Z",
+      "account": {
+        "id": "7e0b50e0",
+        "name": "Memrise",
+        "company": "",
+        "created_at": "2017-02-28T14:33:26Z",
+        "updated_at": "2018-10-12T17:08:58Z"
+      }
+    },
+    "jobs": [
+      {
+        "id": "62b0494516ba56845d6e4c7be40dcff9",
+        "name": "Data request email",
+        "briefing": null,
+        "due_date": "2018-10-16T10:00:00Z",
+        "state": "in_progress",
+        "created_at": "2018-10-12T10:37:06Z",
+        "updated_at": "2018-10-12T10:49:19Z"
+      }
+    ]
+  },
+  {
+    "project": {
+      "id": "85a425bdc07442952d51b65b9e9f9df0",
+      "name": "Web App",
+      "main_format": "",
+      "project_image_url": null,
+      "created_at": "2017-04-10T16:09:44Z",
+      "updated_at": "2018-10-12T17:08:58Z",
+      "account": {
+        "id": "7e0b50e0",
+        "name": "Memrise",
+        "company": "",
+        "created_at": "2017-02-28T14:33:26Z",
+        "updated_at": "2018-10-12T17:08:58Z"
+      }
+    },
+    "jobs": [
+      {
+        "id": "d69c9a789a5c0cecaad761bd0634d198",
+        "name": "SEO translations",
+        "briefing": "2 SEO pages, 'Intermediate Spanish' and 'Learn English Online'. 2049 words total.",
+        "due_date": "2018-10-16T10:00:00Z",
+        "state": "in_progress",
+        "created_at": "2018-10-12T10:28:49Z",
+        "updated_at": "2018-10-12T10:58:15Z"
+      }
+    ]
+  },
+  {
+    "project": {
+      "id": "bb4b6441249427db6b00ffd5147cc731",
+      "name": "Stores",
+      "main_format": "",
+      "project_image_url": null,
+      "created_at": "2018-08-14T08:20:06Z",
+      "updated_at": "2018-10-12T16:49:36Z",
+      "account": {
+        "id": "7e0b50e0",
+        "name": "Memrise",
+        "company": "",
+        "created_at": "2017-02-28T14:33:26Z",
+        "updated_at": "2018-10-12T17:08:58Z"
+      }
+    },
+    "jobs": [
+      {
+        "id": "397b80dc30bfd168e89498fd974493e5",
+        "name": "Translations for 15 October",
+        "briefing": "A mixture of strings, two release notes and one string for a new Developer Page copy. ",
+        "due_date": "2018-10-16T10:00:00Z",
+        "state": "in_progress",
+        "created_at": "2018-10-12T08:56:00Z",
+        "updated_at": "2018-10-12T10:50:08Z"
+      }
+    ]
+  }
+]
