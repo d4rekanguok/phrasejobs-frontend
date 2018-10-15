@@ -1,0 +1,294 @@
+{
+  "id": "d69c9a789a5c0cecaad761bd0634d198",
+  "name": "SEO translations",
+  "owner": {
+    "id": "d55f2e8e4e7b5e806513b970d052d6c9",
+    "username": "mariomemrise",
+    "name": "Mario Pluzny"
+  },
+  "briefing": "2 SEO pages, 'Intermediate Spanish' and 'Learn English Online'. 2049 words total.",
+  "job_tag_name": "job-86E093D1",
+  "due_date": "2018-10-16T10:00:00Z",
+  "state": "in_progress",
+  "created_at": "2018-10-12T10:28:49Z",
+  "updated_at": "2018-10-12T10:58:15Z",
+  "locales": [
+    {
+      "id": "3a69219727f5386874a4ef54a5bf5d34",
+      "name": "Vietnamese",
+      "code": "vi"
+    }
+  ],
+  "keys": [
+    {
+      "id": "0a0a1fcf0d901ec59078d61623b4f8ad",
+      "name": "landing_page_learn_english_online_body_4_4",
+      "plural": false
+    },
+    {
+      "id": "14ad7fccf67db28c7566cb97db495c77",
+      "name": "landing_page_learn_english_online_meta_title",
+      "plural": false
+    },
+    {
+      "id": "14d2af901304c9f6a76bfa3616752251",
+      "name": "landing_page_intermediate_spanish_body_2_2",
+      "plural": false
+    },
+    {
+      "id": "17aedd7de2ccefd1694cabc45a942d1e",
+      "name": "landing_page_intermediate_spanish_body_3_1",
+      "plural": false
+    },
+    {
+      "id": "17cd85ab4f9764a63fbe538bc444f12c",
+      "name": "landing_page_learn_english_online_body_3_2",
+      "plural": false
+    },
+    {
+      "id": "1b6b420f038dee23547e5342e06a4ff5",
+      "name": "landing_page_intermediate_spanish_meta_title",
+      "plural": false
+    },
+    {
+      "id": "1d6c3b0fb883e0c9b90d38d71b01178b",
+      "name": "landing_page_learn_english_online_meta_description",
+      "plural": false
+    },
+    {
+      "id": "2309b23692de383cdd55e274a08846a0",
+      "name": "landing_page_intermediate_spanish_body_3_3",
+      "plural": false
+    },
+    {
+      "id": "29948ae8ff10a54e3bfd7e431bef6017",
+      "name": "landing_page_learn_english_online_heading_4",
+      "plural": false
+    },
+    {
+      "id": "2c6a4eb603419df47da6d0598aa1bd7c",
+      "name": "landing_page_learn_english_online_body_3_6",
+      "plural": false
+    },
+    {
+      "id": "3426c18484be116a11619c57fee19589",
+      "name": "landing_page_learn_english_online_body_4_1",
+      "plural": false
+    },
+    {
+      "id": "35cf7c3fe99ab09876cf574a7adbcf4b",
+      "name": "landing_page_intermediate_spanish_heading_2",
+      "plural": false
+    },
+    {
+      "id": "3aee682dbb39c07f4bd844378edc3a7c",
+      "name": "landing_page_intermediate_spanish_heading_1",
+      "plural": false
+    },
+    {
+      "id": "3be295089444fb5ad54baeec9a28b74f",
+      "name": "landing_page_learn_english_online_body_4_6",
+      "plural": false
+    },
+    {
+      "id": "3dfba673b79af526201854d2acc04122",
+      "name": "landing_page_intermediate_spanish_meta_description",
+      "plural": false
+    },
+    {
+      "id": "4046525be7e2e3a777477453cfe3fbe8",
+      "name": "landing_page_learn_english_online_body_4_2",
+      "plural": false
+    },
+    {
+      "id": "480de930e79f2e99b871885e343cc4be",
+      "name": "landing_page_learn_english_online_body_1_3",
+      "plural": false
+    },
+    {
+      "id": "49d6b6e16705aaa597460d74b6752071",
+      "name": "landing_page_intermediate_spanish_body_3_5",
+      "plural": false
+    },
+    {
+      "id": "4de9bcb6f8bb851e4859a80e0375610b",
+      "name": "landing_page_learn_english_online_body_2_3",
+      "plural": false
+    },
+    {
+      "id": "4e49e76d83cdf3bd476f22cca5cf473e",
+      "name": "landing_page_learn_english_online_title",
+      "plural": false
+    },
+    {
+      "id": "4f46f34f8b5293087ea5788099d1e964",
+      "name": "landing_page_learn_english_online_body_2_4",
+      "plural": false
+    },
+    {
+      "id": "58569aa168a9702ea663aca1fee180c0",
+      "name": "landing_page_learn_english_online_body_4_3",
+      "plural": false
+    },
+    {
+      "id": "5ec19aee6f183e7002f987fc3ac41398",
+      "name": "landing_page_learn_english_online_body_1_2",
+      "plural": false
+    },
+    {
+      "id": "623c808d0957d7517f94df01b8320873",
+      "name": "landing_page_learn_english_online_body_4_5",
+      "plural": false
+    },
+    {
+      "id": "69f243a991a173950d675b830f37eb0a",
+      "name": "landing_page_intermediate_spanish_body_3_4",
+      "plural": false
+    },
+    {
+      "id": "7892b4ea65b21f472c24c68207080c7c",
+      "name": "landing_page_intermediate_spanish_body_4_5",
+      "plural": false
+    },
+    {
+      "id": "7a1f698e2003f8af3bc88532cff251a7",
+      "name": "landing_page_intermediate_spanish_heading_3",
+      "plural": false
+    },
+    {
+      "id": "83215bcc96c33193f55c2c4ed798f842",
+      "name": "landing_page_learn_english_online_body_1_1",
+      "plural": false
+    },
+    {
+      "id": "857737a08e2a23631fbcbdc8ef6547cb",
+      "name": "landing_page_intermediate_spanish_body_4_1",
+      "plural": false
+    },
+    {
+      "id": "8817aaf7d2f200e67616b2615e8bf623",
+      "name": "landing_page_intermediate_spanish_body_1_1",
+      "plural": false
+    },
+    {
+      "id": "89d77a596a73fe499e2bacf9c08d0d33",
+      "name": "landing_page_learn_english_online_body_3_4",
+      "plural": false
+    },
+    {
+      "id": "8a33faa6df9b43e7cc35375a30aa1c08",
+      "name": "landing_page_learn_english_online_body_3_5",
+      "plural": false
+    },
+    {
+      "id": "8ae7c8ba9c6a0f367f4a9183f5cccd45",
+      "name": "landing_page_learn_english_online_body_3_1",
+      "plural": false
+    },
+    {
+      "id": "9e0ec7e999985ec9c7ffa346ac81b4bd",
+      "name": "landing_page_learn_english_online_heading_3",
+      "plural": false
+    },
+    {
+      "id": "9e55df514569065d069bc8461ca89440",
+      "name": "landing_page_learn_english_online_heading_2",
+      "plural": false
+    },
+    {
+      "id": "9fb3d5ec70e2ef9bb30571133e1ed17a",
+      "name": "landing_page_intermediate_spanish_body_3_6",
+      "plural": false
+    },
+    {
+      "id": "a825cd59b28c6b1671c97dd7fb745919",
+      "name": "landing_page_intermediate_spanish_body_1_2",
+      "plural": false
+    },
+    {
+      "id": "aa01850e502abf23e206978242293cee",
+      "name": "landing_page_learn_english_online_body_2_2",
+      "plural": false
+    },
+    {
+      "id": "ac61115c92fb1c5596c1c42e28d0afc8",
+      "name": "landing_page_learn_english_online_body_3_3",
+      "plural": false
+    },
+    {
+      "id": "b11473080178fce26f4d7ecc934b431c",
+      "name": "landing_page_learn_english_online_body_2_5",
+      "plural": false
+    },
+    {
+      "id": "c51b46d03c9b3a856e436a4cd8d0d761",
+      "name": "landing_page_intermediate_spanish_body_1_3",
+      "plural": false
+    },
+    {
+      "id": "c5226dd2b85ff854d1be8b9955b9f812",
+      "name": "landing_page_intermediate_spanish_body_2_3",
+      "plural": false
+    },
+    {
+      "id": "d02df3878279ee3c3bc05aa9e05d8f81",
+      "name": "landing_page_intermediate_spanish_title",
+      "plural": false
+    },
+    {
+      "id": "d269a17b642c81ad97da56acb0ddee09",
+      "name": "landing_page_intermediate_spanish_body_2_4",
+      "plural": false
+    },
+    {
+      "id": "d2a22a339685e836024ab1b6ddb353b5",
+      "name": "landing_page_intermediate_spanish_body_4_3",
+      "plural": false
+    },
+    {
+      "id": "d78cde45dc4d61825e8145aa5af73efa",
+      "name": "landing_page_learn_english_online_body_2_1",
+      "plural": false
+    },
+    {
+      "id": "df0f5c189091207c750a7f441980971e",
+      "name": "landing_page_intermediate_spanish_body_4_6",
+      "plural": false
+    },
+    {
+      "id": "e55c5421d70d60b4ad8eb20e4ff7cab1",
+      "name": "landing_page_intermediate_spanish_body_4_4",
+      "plural": false
+    },
+    {
+      "id": "e70584b0aacb5e95f58e39166a49229d",
+      "name": "landing_page_intermediate_spanish_body_2_5",
+      "plural": false
+    },
+    {
+      "id": "ee488ede389d7835ace67214918a971e",
+      "name": "landing_page_intermediate_spanish_heading_4",
+      "plural": false
+    },
+    {
+      "id": "f9609b48b2967a02d0aff1395b3478f5",
+      "name": "landing_page_intermediate_spanish_body_4_2",
+      "plural": false
+    },
+    {
+      "id": "f9deec538781453562933ae634dcbd53",
+      "name": "landing_page_intermediate_spanish_body_3_2",
+      "plural": false
+    },
+    {
+      "id": "fb9e66cc15d6f87b0e68c44218a029a6",
+      "name": "landing_page_intermediate_spanish_body_2_1",
+      "plural": false
+    },
+    {
+      "id": "fe75756dacb1cc2eeceb2e2634f59112",
+      "name": "landing_page_learn_english_online_heading_1",
+      "plural": false
+    }
+  ]
+}

@@ -8,14 +8,11 @@ function getJobs () {
   .catch(console.error);
 };
 
-function getJobLocales (projectId='', jobId='') {
-  if (typeof projectId === 'string' || typeof jobId.length === 'string') {
-    throw `Error: expect projectId & jobId to be not empty`
-  };
+function getJobDetail ({ projectId='', jobId='' }) {
   if (projectId.length === 0 || jobId.length === 0){
     throw `Error: expect projectId & jobId to be not empty`
   };
-  return fetchWithToken(`jobs/`)
+  return fetchWithToken(`jobs/${projectId}/${jobId}`)
     .then(res => res.json())
     .then(devLogger)
     .catch(console.error);
@@ -23,5 +20,5 @@ function getJobLocales (projectId='', jobId='') {
 
 export {
   getJobs,
-  getJobLocales,
+  getJobDetail,
 }

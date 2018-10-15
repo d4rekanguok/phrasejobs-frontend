@@ -1,14 +1,31 @@
 import React from 'react';
 import slugg from 'slugg';
-// import { getJobs } from '../../services/jobs';
-import { getJobs } from '../../../mock/jobs';
+
+import { withData } from '../../../utils';
+// import { getJobs, getJobDetail } from '../../../services/jobs';
+import { getJobs, getJobDetail } from '../../../mock/jobs';
 import { DueDate } from './DueDate';
 
-const Job = ({ pname, job: {name, due_date, id} }) => (
+const JobDetailView = ({ data }) => {
+  const { briefing, keys } = data;
+  return (
+    <div>
+      <p>{ briefing }</p>
+      <p>{`${keys.length} keys`}</p>
+    </div>
+  ) 
+};
+
+const JobDetail = withData(
+  ({ projectId, jobId }) => getJobDetail({ projectId, jobId }),
+)(JobDetailView);
+
+const Job = ({ pname, job: {name, due_date, id}, children }) => (
   <li>
     <h4>{name}</h4>
     <DueDate time={due_date} />
     <a href={`https://phraseapp.com/accounts/memrise/projects/${slugg(pname)}/jobs/${id}`}>Go to job</a>
+    <div>{ children }</div>
   </li>
 )
 
@@ -23,42 +40,29 @@ const Project = ({ project, children }) => (
   </li>
 )
 
-class JobList extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { projects: [] };
-    this.getData = this.getData.bind(this);
-  }
+const JobListView = ({ data, getData } = { 
+  data: [], 
+  getData: () => Promise.resolve({}) 
+}) => (
+  <div>
+    <h2>Current Jobs</h2>
+    <button onClick={() => getData()}>
+      Refresh
+    </button>
+    <ul>
+      {data.map(({ project, jobs }) => 
+        <Project key={project.id} project={project} jobs={jobs}>
+          {jobs.map( j => 
+            <Job key={j.id} job={j} pname={project.name}>
+              <JobDetail projectId={project.id} jobId={j.id} />
+            </Job>)}
+        </Project>
+      )}
+    </ul>
+  </div>
+)
 
-  componentDidMount() {
-    this.getData();
-  }
-
-  getData() {
-    getJobs()
-      .then(projects => this.setState({ projects }));
-  }
-
-  render() {
-    const projects = this.state.projects;
-    return (
-      <div>
-        <h2>Current Jobs</h2>
-        <button onClick={() => this.getData()}>
-          Refresh
-        </button>
-        <ul>
-          {projects.map( ({ project, jobs }) => 
-            <Project key={project.id} project={project} jobs={jobs}>
-              {jobs.map( j => 
-                <Job key={j.id} job={j} pname={project.name} />)}
-            </Project>
-          )}
-        </ul>
-      </div>
-    )
-  }
-}
+const JobList = withData(getJobs)(JobListView);
 
 export {
   JobList,

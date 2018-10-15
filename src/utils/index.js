@@ -1,8 +1,7 @@
-function devLogger (data) {
-  if (process.env.NODE_ENV !== 'production') console.log(data);
-  return data;
-}
+import devLogger from './devLogger';
+import withData from './withData';
 
 export {
   devLogger,
+  withData,
 }
