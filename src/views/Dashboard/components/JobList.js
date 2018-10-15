@@ -6,12 +6,13 @@ import { withData } from '../../../utils';
 import { getJobs, getJobDetail } from '../../../mock/jobs';
 import { DueDate } from './DueDate';
 
-const JobDetailView = ({ data }) => {
+const JobDetailView = ({ data, pname }) => {
   const { briefing, keys } = data;
   return (
     <div>
       <p>{ briefing }</p>
       <p>{`${keys.length} keys`}</p>
+      <a href={`https://phraseapp.com/accounts/memrise/projects/${slugg(pname)}/editor?job_id=${data.id}&target_locale_id=${data.locales[0].id}`}>Start job</a>
     </div>
   ) 
 };
@@ -24,6 +25,7 @@ const Job = ({ pname, job: {name, due_date, id}, children }) => (
   <li>
     <h4>{name}</h4>
     <DueDate time={due_date} />
+    
     <a href={`https://phraseapp.com/accounts/memrise/projects/${slugg(pname)}/jobs/${id}`}>Go to job</a>
     <div>{ children }</div>
   </li>
@@ -54,7 +56,7 @@ const JobListView = ({ data, getData } = {
         <Project key={project.id} project={project} jobs={jobs}>
           {jobs.map( j => 
             <Job key={j.id} job={j} pname={project.name}>
-              <JobDetail projectId={project.id} jobId={j.id} />
+              <JobDetail pname={project.name} projectId={project.id} jobId={j.id} />
             </Job>)}
         </Project>
       )}
